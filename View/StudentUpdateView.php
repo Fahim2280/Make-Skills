@@ -2,15 +2,18 @@
 <html>
 
 <head>
-    <title>Signup Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="validation.js"></script>
+    <title>Update Student</title>
+    <!-- <link rel="stylesheet" type="text/css" href="SDV.css"> -->
 </head>
 
 <body>
     <div class="container">
-        <h2>Create an Account</h2>
-        <form method="POST" action="../Controller/CSingUp.php" onsubmit="return validateForm()">
+        <h2>Update Student</h2>
+        <form method="POST" action="" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="id">ID:</label>
+                <input type="text" id="id" name="id">
+            </div>
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
@@ -50,6 +53,7 @@
             <button type="submit">Signup</button>
         </form>
     </div>
+
 </body>
 
 </html>
