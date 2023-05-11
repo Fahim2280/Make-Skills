@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Signup Page</title>
+    <title>Instructor Add</title>
     <link rel="stylesheet" type="text/css" href="SingUp.css">
     <script src="validation.js"></script>
 </head>
@@ -12,8 +12,8 @@
     include 'header.php';
     ?>
     <div class="container">
-        <h2>Create an Account</h2>
-        <form method="POST" action="../Controller/CSingUp.php" onsubmit="return validateForm()">
+        <h2>Create an Instructor Account</h2>
+        <form method="POST" action="../Controller/CInstructorAdd.php" onsubmit="return validateForm()">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
@@ -50,7 +50,7 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password">
             </div>
-            <button type="submit">Signup</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
     <?php

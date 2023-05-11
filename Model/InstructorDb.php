@@ -2,19 +2,19 @@
 
 require 'dbConnection.php';
 
-function getAllStudent()
+function getAllInstructor()
 {
     $conn = getConnection();
-    $sql = "SELECT * FROM student";
+    $sql = "SELECT * FROM instructor";
     $result = mysqli_query($conn, $sql);
     mysqli_close($conn);
     return $result;
 }
 
-function addStudent($data)
+function addInstructor($data)
 {
     $conn = getConnection();
-    $sql = "insert into student(Name, Username, Email,Gender, Phone_number, Address, DOB, Password) values
+    $sql = "insert into Instructor (Name, Username, Email,Gender, Phone_number, Address, DOB, Password) values
 ('{$data['name']}','{$data['username']}','{$data['email']}','{$data['gender']}','{$data['phone']}','{$data['address']}','{$data['dob']}','{$data['password']}')";
     if (mysqli_query($conn, $sql)) {
         return;
@@ -23,10 +23,10 @@ function addStudent($data)
     }
 }
 
-function deleteStudent($id)
+function deleteInstructor($id)
 {
     $conn = getConnection();
-    $sql = "DELETE FROM student WHERE ID = $id";
+    $sql = "DELETE FROM instructor WHERE ID = $id";
     if (mysqli_query($conn, $sql)) {
         return true;
     } else {
@@ -34,10 +34,10 @@ function deleteStudent($id)
     }
 }
 
-function updateStudent($data)
+function updateInstructor($data)
 {
     $conn = getConnection();
-    $sql = "update student set Name='{$data['name']}',Username='{$data['username']}',Email='{$data['email']}',Gender='{$data['gender']}',Phone_number='{$data['phone']}',Address='{$data['address']}',DOB='{$data['dob']}',Password='{$data['password']}'";
+    $sql = "update Instructor set Name='{$data['name']}',Username='{$data['username']}',Email='{$data['email']}',Gender='{$data['gender']}',Phone_number='{$data['phone']}',Address='{$data['address']}',DOB='{$data['dob']}',Password='{$data['password']}'";
     if (mysqli_query($conn, $sql)) {
         return true;
     } else {
@@ -45,11 +45,12 @@ function updateStudent($data)
     }
 }
 
-function getStudentId($id)
+function getInstructorId($id)
 {
     $conn = getConnection();
-    $sql = "SELECT * FROM student WHERE ID = $id";
+    $sql = "SELECT * FROM Instructor WHERE ID = $id";
     $result = mysqli_query($conn, $sql);
     $data = mysqli_fetch_assoc($result);
     return $data;
 }
+

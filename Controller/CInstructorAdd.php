@@ -1,15 +1,15 @@
 
 <?php
 
-require_once('../Model/studentDb.php');
+require_once('../Model/InstructorDb.php');
 
 $Name = $_REQUEST['name'];
 $Username = $_REQUEST['username'];
 $Email = $_REQUEST['email'];
 $Gender = $_REQUEST['gender'];
 $Phone_number = $_REQUEST['phone'];
-$Adderss = $_REQUEST['address'];
 $Gender = $_REQUEST['gender'];
+$Adderss = $_REQUEST['address'];
 $DOB = $_REQUEST['dob'];
 $Adderss = $_REQUEST['address'];
 $Password = $_REQUEST['password'];
@@ -28,6 +28,6 @@ if ($Name == null || $Username == null || $Email == null || $Phone_number == nul
     $data['dob'] = $DOB;
     $data['password'] = $Password;
 
-    addStudent($data);
+    addInstructor($data);
     header('location: ../View/SingIn.php');
 }

@@ -1,0 +1,31 @@
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  clear: both;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer nav ul li a {
+  color: #0a0a0a;
+  text-decoration: none;
+}

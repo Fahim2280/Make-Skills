@@ -13,9 +13,9 @@
 
     echo "<br>";
 
-    require '../Model/studentDb.php';
+    require '../Model/InstructorDb.php';
 
-    $result = getAllStudent();
+    $result = getAllInstructor();
     $num = mysqli_num_rows($result);
     if ($num > 0) {
         echo "<table>";
