@@ -43,8 +43,8 @@
             echo "<td>" . $data["Address"] . "</td>";
             echo "<td>" . $data["Password"] . "</td>";
             echo "<td>
-            <a href='../View/StudentUpdateView.php?update=" . $data["Id"] . "'>Update</a>
-            <a href='../Controller/StudentDelete.php?delete=" . $data["Id"] . "'>Delete</a>
+            <a href='../View/InstructorUpdateView.php?update=" . $data["Id"] . "'>Update</a>
+            <a href='../Controller/InstructorDelete.php?delete=" . $data["Id"] . "'>Delete</a>
             </td>";
             echo "</tr>";
         }
