@@ -31,8 +31,7 @@ $Password  = $data["Password"];
         <h2>Update Student</h2>
         <form method="POST" action="../Controller/CIUpdate.php" onsubmit="return validateForm()">
             <div class="form-group">
-                <label for="id">ID:</label>
-                <input type="text" id="id" name="id" value=<?php echo $Id ?> disabled>
+                <input type="text" id="id" name="id" value=<?php echo $Id ?> hidden>
             </div>
             <div class="form-group">
                 <label for="name">Name:</label>

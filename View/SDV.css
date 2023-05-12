@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -20,4 +24,3 @@ table th {
   background-color: #4caf50;
   color: white;
 }
-

@@ -37,7 +37,8 @@ function deleteInstructor($id)
 function updateInstructor($data)
 {
     $conn = getConnection();
-    $sql = "update Instructor set Name='{$data['name']}',Username='{$data['username']}',Email='{$data['email']}',Gender='{$data['gender']}',Phone_number='{$data['phone']}',Address='{$data['address']}',DOB='{$data['dob']}',Password='{$data['password']}' ";
+    $sql = "update Instructor set Name='{$data['name']}',Username='{$data['username']}',Email='{$data['email']}',Gender='{$data['gender']}',Phone_number='{$data['phone']}',Address='{$data['address']}',DOB='{$data['dob']}',Password='{$data['password']}' where ID='{$data['id']}'";
+    echo $sql;
     if (mysqli_query($conn, $sql)) {
         return true;
     } else {
