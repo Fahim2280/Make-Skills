@@ -1,12 +1,12 @@
 <?php
-require_once('../Model/studentDb.php');
+require_once('../Model/AdminDb.php');
 //require_once('../Model/dbConnection.php.php');
 //$conn = getConnection();
 
 $id = $_GET['update'];
 
-$data = getStudentId($id);
-$Id = $data["Id"];
+$data = getAdminId($id);
+$Id = $data["ID"];
 $Name  = $data["Name"];
 $Username = $data["Username"];
 $Email = $data["Email"];
@@ -22,14 +22,14 @@ $Password  = $data["Password"];
 <html>
 
 <head>
-    <title>Update Student</title>
+    <title>Update Admin</title>
     <!-- <link rel="stylesheet" type="text/css" href="SDV.css"> -->
 </head>
 
 <body>
     <div class="container">
         <h2>Update Student</h2>
-        <form method="POST" action="../Controller/CSUpdate.php" onsubmit="return validateForm()">
+        <form method="POST" action="../Controller/CAUpdate.php" onsubmit="return validateForm()">
             <div class="form-group">
                 <input type="text" id="id" name="id" value=<?php echo $Id ?> hidden>
             </div>

@@ -1,23 +1,21 @@
 
 <?php
 
-require_once('../Model/studentDb.php');
-$ID = $_REQUEST['id'];
+require_once('../Model/AdminDb.php');
+
 $Name = $_REQUEST['name'];
 $Username = $_REQUEST['username'];
 $Email = $_REQUEST['email'];
 $Gender = $_REQUEST['gender'];
 $Phone_number = $_REQUEST['phone'];
-$Adderss = $_REQUEST['address'];
 $DOB = $_REQUEST['dob'];
 $Adderss = $_REQUEST['address'];
 $Password = $_REQUEST['password'];
 
-if ($Name == null || $Username == null || $Email == null || $Phone_number == null || $Adderss == null || $DOB == null || $Password == null) {
+if ($Name == null || $Username == null || $Email == null || $Phone_number == null || $Gender == null  || $Adderss == null || $DOB == null || $Password == null) {
     echo "<h1>Please fill up all the information</h1>";
     return;
 } else {
-    $data['id'] = $ID;
     $data['name'] = $Name;
     $data['username'] = $Username;
     $data['email'] = $Email;
@@ -27,6 +25,6 @@ if ($Name == null || $Username == null || $Email == null || $Phone_number == nul
     $data['dob'] = $DOB;
     $data['password'] = $Password;
 
-    updateStudent($data);
-    header('location: ../View/StudentDataView.php');
+    addAdmin($data);
+    header('location: ../View/AdminDataView.php');
 }

@@ -13,11 +13,11 @@
 
     echo "<br>";
 
-    require '../Model/InstructorDb.php';
-    echo "<h1>Instructor Data</h1>";
-    echo "<a href='InstructorAdd.php'>Add Instructor</a>";
+    require '../Model/AdminDb.php';
+    echo "<h1>Admin Data</h1>";
+    echo "<a href='AdminAdd.php'>Add Admin</a>";
     echo "<br>";
-    $result = getAllInstructor();
+    $result = getAllAdmin();
     $num = mysqli_num_rows($result);
     if ($num > 0) {
         echo "<table>";
@@ -35,7 +35,7 @@
                 </tr>";
         while ($data = mysqli_fetch_assoc($result)) {
             echo "<tr>";
-            echo "<td>" . $data["Id"] . "</td>";
+            echo "<td>" . $data["ID"] . "</td>";
             echo "<td>" . $data["Name"] . "</td>";
             echo "<td>" . $data["Username"] . "</td>";
             echo "<td>" . $data["Email"] . "</td>";
@@ -45,8 +45,8 @@
             echo "<td>" . $data["Address"] . "</td>";
             echo "<td>" . $data["Password"] . "</td>";
             echo "<td>
-            <a href='../View/InstructorUpdateView.php?update=" . $data["Id"] . "'>Update</a>
-            <a href='../Controller/InstructorDelete.php?delete=" . $data["Id"] . "'>Delete</a>
+            <a href='../View/AdminUpdateView.php?update=" . $data["ID"] . "'>Update</a>
+            <a href='../Controller/AdminDelete.php?delete=" . $data["ID"] . "'>Delete</a>
             </td>";
             echo "</tr>";
         }

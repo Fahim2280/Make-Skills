@@ -1,7 +1,7 @@
 
 <?php
 
-require_once('../Model/studentDb.php');
+require_once('../Model/AdminDb.php');
 $ID = $_REQUEST['id'];
 $Name = $_REQUEST['name'];
 $Username = $_REQUEST['username'];
@@ -26,7 +26,8 @@ if ($Name == null || $Username == null || $Email == null || $Phone_number == nul
     $data['address'] = $Adderss;
     $data['dob'] = $DOB;
     $data['password'] = $Password;
-
-    updateStudent($data);
-    header('location: ../View/StudentDataView.php');
+    updateAdmin($data);
 }
+//$data['id'] = $ID;
+header('location: ../View/AdminDataView.php');
+?>
