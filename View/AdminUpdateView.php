@@ -27,6 +27,7 @@ $Password  = $data["Password"];
 </head>
 
 <body>
+    <?php include 'Header.php'; ?>
     <div class="container">
         <h2>Update Student</h2>
         <form method="POST" action="../Controller/CAUpdate.php" onsubmit="return validateForm()">
@@ -72,7 +73,7 @@ $Password  = $data["Password"];
             <button type="submit">Update</button>
         </form>
     </div>
-
+    <?php include 'Footer.php'; ?>
 </body>
 
 </html>
