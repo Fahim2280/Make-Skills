@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION['user_name'] = $row['Name'];
         $_SESSION['user_email'] = $row['Email'];
         $_SESSION['user_type'] = 'student';
-        header('Location: student_dashboard.php');
+        header('Location: ../View/student_dashboard.php');
         exit();
     }
 
@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION['user_name'] = $row['Name'];
         $_SESSION['user_email'] = $row['Email'];
         $_SESSION['user_type'] = 'admin';
-        header('Location: admin_dashboard.php');
+        header('Location: ../View/admin_dashboard.php');
         exit();
     }
 
