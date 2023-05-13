@@ -7,21 +7,24 @@
 </head>
 
 <body>
+    <?php include 'Header.php'; ?>
+    <div class="container">
         <div class="form-container">
             <h2>Login to Your Account</h2>
-            <form>
+            <form method="post" action="../Model/LoginCheck.php">
                 <div class="form-group">
                     <label for="login-username">Username or Email:</label>
-                    <input type="text" id="login-username" name="login-username" required>
+                    <input type="text" name="login" id="login" required><br>
                 </div>
                 <div class="form-group">
                     <label for="login-password">Password:</label>
-                    <input type="password" id="login-password" name="login-password" required>
+                    <input type="password" name="password" id="password" required><br>
                 </div>
                 <button type="submit">Login</button>
             </form>
         </div>
     </div>
+    <?php include 'Footer.php'; ?>
 </body>
 
 </html>
