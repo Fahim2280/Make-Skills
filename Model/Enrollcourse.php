@@ -15,7 +15,7 @@ function addEnrollcourse($data)
 {
     $conn = getConnection();
     $sql = "insert into enrollcourse (Username, Course_Title, Instructor_Name, Enrollment_Date) values
-('{$data['username']}','{$data['course_title']}','{$data['instructor_name']}','{$data['enrollment_date']}')";
+('{$data['user_email']}','{$data['course_name']}','{$data['course_instructor']}','{$data['enrollment_date']}')";
     if (mysqli_query($conn, $sql)) {
         return;
     } else {

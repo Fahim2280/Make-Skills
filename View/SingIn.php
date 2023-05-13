@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Signup</title>
+    <title>Sign In</title>
     <link rel="stylesheet" type="text/css" href="SingIn.css">
 </head>
 
@@ -22,6 +22,7 @@
                 </div>
                 <button type="submit">Login</button>
             </form>
+
         </div>
     </div>
     <?php include 'Footer.php'; ?>

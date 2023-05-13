@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="footer.css">
 </head>
+
 <body>
     <footer>
         <div class="footer-left">
@@ -22,7 +23,7 @@
                 <ul>
                     <li><a href="#">Facebook</a></li>
                     <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
+                    <li><a href="https://www.instagram.com/__fahim_alam__/">Instagram</a></li>
                     <li><a href="#">LinkedIn</a></li>
                 </ul>
             </nav>
