@@ -2,5 +2,6 @@
 session_start();
 session_destroy();
 echo "<hr>";
-header('location: ../View/SingIn.php');
+echo"session destroyed";
+//header('location: ../View/SingIn.php');
 ?>

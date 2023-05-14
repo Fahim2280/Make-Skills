@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_email'])) {
-    header('location: ../View/SingIn.php');
+    header('location: ./View/SingIn.php');
     exit();
 }
 
@@ -19,8 +19,24 @@ if (!isset($_SESSION['user_email'])) {
 
 <body>
     <?php
-    include './View/Header.php';
-    echo $_SESSION['user_email'];
+    include './View/header.php';
+    ?>
+    <div class="">
+        <?php
+        if ($_SESSION['user_type'] == "admin") {
+            echo "<li><a href='../View/admin_dashboard.php'>Profile</a></li>";
+        }
+        if ($_SESSION['user_type'] == "instructor") {
+            echo "<li><a href='../View/instructor_dashboard.php'>Profile</a></li>";
+        }
+        if ($_SESSION['user_type'] == "student") {
+            echo "<li><a href='../View/student_dashboard.php'>Profile</a></li>";
+        } elseif ($_SESSION['user_type'] == "") {
+            echo "<li><a href=''>Profile</a></li>";
+        }
+        ?>
+    </div>
+    <?php
     require './Model/coursesDb.php';
     $result = getAllCourses();
     $num = mysqli_num_rows($result);
@@ -49,7 +65,7 @@ if (!isset($_SESSION['user_email'])) {
         </div>
     <?php
     }
-    include './View/Footer.php';
+    include './View/footer.php';
     ?>
 </body>
 

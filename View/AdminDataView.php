@@ -9,7 +9,7 @@
 <body>
     <?php
 
-    include 'Header.php';
+    //include 'Header.php';
 
     echo "<br>";
 
@@ -57,7 +57,7 @@
 
     echo "<br>";
 
-    include 'Footer.php';
+    //include 'Footer.php';
     ?>
 </body>
 

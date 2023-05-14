@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include 'Header.php'; ?>
+    <?php include 'header.php'; ?>
     <div class="container">
         <div class="form-container">
             <h2>Login to Your Account</h2>
@@ -25,7 +25,7 @@
 
         </div>
     </div>
-    <?php include 'Footer.php'; ?>
+    <?php include 'footer.php'; ?>
 </body>
 
 </html>

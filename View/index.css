@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  background-color: #f1f1f1;
 }
 .course-card {
 	border: 1px solid #ccc;
@@ -10,6 +11,23 @@ body {
 	margin: 20px;
 	padding: 20px;
 }
+.logo a {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+li {
+  display: inline-block;
+  margin-right: 10px;
+ 
+}
+a {
+	color: #333;
+	text-decoration: none;
+	right: 100px;;
+}
+
 
 .course-image-container {
 	flex: 0 0 30%;
