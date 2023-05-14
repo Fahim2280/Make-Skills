@@ -50,12 +50,13 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password">
             </div>
-            <button type="submit">Signup</button>
+            <button type="submit">Sign Up</button>
         </form>
     </div>
     <?php
     include 'footer.php';
     ?>
+    <script src="../Controller/validation.js"></script>
 </body>
 
 </html>

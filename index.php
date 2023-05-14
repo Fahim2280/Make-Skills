@@ -15,13 +15,42 @@ if (!isset($_SESSION['user_email'])) {
     <link rel="stylesheet" type="text/css" href="./View/index.css">
     <link rel="stylesheet" type="text/css" href="./View/Header.css">
     <link rel="stylesheet" type="text/css" href="./View/Footer.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        // Wait for the document to be ready
+        $(document).ready(function() {
+            // Listen for keyup event on the search input field
+            $('input[name="search"]').on('keyup', function() {
+                // Get the search query value
+                var query = $(this).val();
+
+                // Make an AJAX request to fetch search results
+                $.ajax({
+                    url: '../Controller/search.php', // The URL to the server-side script that handles the search
+                    method: 'POST',
+                    data: {
+                        query: query
+                    }, // Send the search query to the server
+                    success: function(response) {
+                        // Update the LiveSearchData div with the search results
+                        $('.LiveSearchData').html(response);
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
     <?php
     include './View/header.php';
     ?>
-    <div class="">
+    <div class="SearchBox"></div>
+    <input type="text" name="search" placeholder="Search">
+    </div>
+    <div class="LiveSearchData"></div>
+    <div class="button">
         <?php
         if ($_SESSION['user_type'] == "admin") {
             echo "<li><a href='../View/admin_dashboard.php'>Profile</a></li>";

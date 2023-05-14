@@ -64,14 +64,15 @@ if (!isset($_SESSION['user_email'])) {
                     <div class="sidebar">
                         <a href="../View/AdminAdd.php">Admin Add</a>
                         <a href="../View/AdminDataView.php">Admin Data</a>
-                        <a href="../View/InstructorAdd.php"></a>
+                        <a href="../View/InstructorAdd.php">Instructor Add</a>
                         <a href="../View/InstructorDataView.php">Instructor Data</a>
                         <a href="../View/StudentAdd.php">Student Add</a>
                         <a href="../View/StudentDataView.php">Student Data</a>
                         <a href="../View/CourseAdd.php">Course Add</a>
                         <a href="../View/CourseDataView.php">Course Data</a>
                         <a href="../View/EnrollDataView.php">Enroll Data</a>
-                        <a href="../View/EnrollAdd.php">Enroll Add</a>
+                        <a href="../View/EnrollcourseAdd.php">Enroll Add</a>
+                        <a href="../View/ApplicationDataView.php">Applications</a>
                     </div>
                 </div>
                 <!-- <div id="content">

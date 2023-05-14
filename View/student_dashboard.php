@@ -62,7 +62,7 @@ if (!isset($_SESSION['user_email'])) {
                         <p>Address : <?php echo $data['Address']; ?></p>
                     </div>
                     <div class="sidebar">
-                        <a href="../View/EnrollDataView.php">Enroll Data</a>
+                        <a href="../View/ShowEnrollCourse.php">Enroll Data</a>
                     </div>
                 </div>
                 <!-- <div id="content">

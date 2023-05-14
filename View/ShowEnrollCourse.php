@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 if (!isset($_SESSION['user_email'])) {
     header('location: ../View/SingIn.php');
@@ -41,9 +41,7 @@ if (!isset($_SESSION['user_email'])) {
                 echo "<td>" . $data["Course_Title"] . "</td>";
                 echo "<td>" . $data["Instructor_Name"] . "</td>";
                 echo "<td>" . $data["Enrollment_Date"] . "</td>";
-                echo "<td>
-            <a href='../Controller/EnrollcourseDelete.php?delete=" . $data["Id"] . "'>Delete</a>
-            </td>";
+                echo "<td>";
                 echo "</tr>";
             }
         }

@@ -15,6 +15,10 @@
 
     require '../Model/studentDb.php';
 
+    echo "<h2>Student Data</h2>";
+    echo "<br>";
+    echo "<a href='StudentInsertView.php' >Insert Student</a>";
+
     $result = getAllStudent();
     $num = mysqli_num_rows($result);
     if ($num > 0) {

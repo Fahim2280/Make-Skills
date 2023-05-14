@@ -38,18 +38,11 @@
                 <li><a href="../View/SingIn.php">Sing In</a></li>
                 <li><a href="../View/SingUp.php">Sing Up</a></li>
                 <li><a href="../Controller/SingOut.php">Sing Out</a></li>
+                <li>Are you apply for Instructor ? <a href="../View/ApplicationAdd.php">Apply Now</a></li>
             </ul>
         </nav>
         <div class="user-profile">
-            <?php
-            // PHP code to display user profile information
-            // if (isset($_SESSION['user_email'])) {
-            //     echo $_SESSION['user_name'];
-            // } else {
-            //     header('location: ../View/SingIn.php');
-            //     exit();
-            // }
-            ?>
+
         </div>
     </header>
 </body>

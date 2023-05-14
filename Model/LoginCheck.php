@@ -29,7 +29,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Check if the email or username and password match the instructors table
     $query = "SELECT * FROM instructor WHERE (Email = '$login' OR Username = '$login') AND Password = '$password'";
-    echo $query;
     $result = mysqli_query($conn, $query);
     if (mysqli_num_rows($result) == 1) {
         $row = mysqli_fetch_assoc($result);
@@ -56,5 +55,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // If the credentials are invalid, show an error message
     $error = 'Invalid email or username and password combination.';
-    echo $error;
+    echo "<script>alert('$error'); window.location.href = '../View/SingIn.php';</script>";
+    exit();
 }

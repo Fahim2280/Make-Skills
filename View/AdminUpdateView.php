@@ -23,7 +23,7 @@ $Password  = $data["Password"];
 
 <head>
     <title>Update Admin</title>
-    <!-- <link rel="stylesheet" type="text/css" href="SDV.css"> -->
+    <link rel="stylesheet" type="text/css" href="SingUp.css">
 </head>
 
 <body>

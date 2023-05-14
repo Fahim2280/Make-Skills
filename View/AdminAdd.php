@@ -56,6 +56,7 @@
     <?php
     include 'footer.php';
     ?>
+    <script src="../Controller/validation.js"></script>
 </body>
 
 </html>
