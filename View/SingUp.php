@@ -9,7 +9,7 @@
 
 <body>
     <?php
-    include 'header.php';
+    include 'header.php'; //MVC Model=database View=UI Controller=PHP
     ?>
     <div class="container">
         <h2>Create an Account</h2>
